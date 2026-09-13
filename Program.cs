@@ -12,7 +12,7 @@
 //    Modifying the copied variable does not affect the original variable.
 
 //B)b) What happens when a Customer variable is copied into another variable and one variable modifies the objec
-//Because Customer is a class (reference type), copying the variable copies the reference to the same
+//Because Customer is a class (reference type), copying the variable copies the reference to the same object
 #endregion
 
 
