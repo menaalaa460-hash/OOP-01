@@ -15,6 +15,26 @@
 //Because Customer is a class (reference type), copying the variable copies the reference to the same object
 #endregion
 
+#region
+//public struct Shipment
+//{
+//    public string Description; public double Weight; public decimal DeliveryFee;
+//}
+
+//a)	a) Identify at least three problems with this design from an encapsulation perspective.
+
+//   1- The fields are public
+//   2-There is no validation 
+//   3-The internal data is not protected
+
+//b)	b) How can private fields and public properties improve this design ?
+    // Private fields protect the data.
+    // Public properties provide controlled access and validation.
+#endregion
+
+
+
+
 
 
 
