@@ -36,39 +36,39 @@
 //User Story: You are building a simple Smart Delivery Management System for a delivery company. The system man-ages shipment data,
 //delivery addresses, price and shipment searching. Build it as a Console Application that reads data from the user and prints shipment information.
 
-struct DeliveryAddress
-{
-    public string City;
-    public string Street;
-    public int BuildingNumber;
+//struct DeliveryAddress
+//{
+//    public string City;
+//    public string Street;
+//    public int BuildingNumber;
 
-    public DeliveryAddress(string city, string street, int buildingNumber)
-    {
-        City = city;
-        Street = street;
-        BuildingNumber = buildingNumber;
-    }
-    public string GetFullAddress()
-    {
-        return $"{BuildingNumber} {Street}, {City}";
-    }
-}
-class Program
-{
-    static void Main(string[] args)
-    {
-        DeliveryAddress address1 =
-            new DeliveryAddress("Cairo", "Maadi Street", 233);
-        DeliveryAddress address2 = address1;
-        address2.City = "Cairo";
-        address2.Street = " october ";
-        address2.BuildingNumber = 20;
+//    public DeliveryAddress(string city, string street, int buildingNumber)
+//    {
+//        City = city;
+//        Street = street;
+//        BuildingNumber = buildingNumber;
+//    }
+//    public string GetFullAddress()
+//    {
+//        return $"{BuildingNumber} {Street}, {City}";
+//    }
+//}
+//class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        DeliveryAddress address1 =
+//            new DeliveryAddress("Cairo", "Maadi Street", 233);
+//        DeliveryAddress address2 = address1;
+//        address2.City = "Cairo";
+//        address2.Street = " october ";
+//        address2.BuildingNumber = 20;
 
-        Console.WriteLine("Original Address: " + address1.GetFullAddress());
+//        Console.WriteLine("Original Address: " + address1.GetFullAddress());
 
-        Console.WriteLine("Copied Address: " + address2.GetFullAddress());
-    }
-}
+//        Console.WriteLine("Copied Address: " + address2.GetFullAddress());
+//    }
+//}
 #endregion
 
 #region 2.Ceate a Shipment struct
@@ -139,7 +139,7 @@ class Program
 //        }
 //    }
 
-   
+
 //    public Shipment(string trackingCode)
 //    {
 //        this.trackingCode = "";
@@ -187,7 +187,61 @@ class Program
 //}
 #endregion
 
+#region . Create a DeliveryCenter struct
+//struct DeliveryCenter
+//{
+//    private Shipment[] shipments;
 
+//    public DeliveryCenter()
+//    {
+//        shipments = new Shipment[10];
+//    }
+
+//    public Shipment this[int index]
+//    {
+//        get
+//        {
+//            if (index >= 0 && index < shipments.Length)
+//                return shipments[index];
+
+//            return default;
+//        }
+//        set
+//        {
+//            if (index >= 0 && index < shipments.Length)
+//                shipments[index] = value;
+//        }
+//    }
+
+//    public Shipment this[string trackingCode]
+//    {
+//        get
+//        {
+//            for (int i = 0; i < shipments.Length; i++)
+//            {
+//                if (shipments[i].TrackingCode == trackingCode)
+//                    return shipments[i];
+//            }
+
+//            return default;
+//        }
+//    }
+
+//    public bool AddShipment(Shipment shipment)
+//    {
+//        for (int i = 0; i < shipments.Length; i++)
+//        {
+//            if (string.IsNullOrEmpty(shipments[i].TrackingCode))
+//            {
+//                shipments[i] = shipment;
+//                return true;
+//            }
+//        }
+
+//        return false;
+//    }
+//}
+#endregion
 
 
 
